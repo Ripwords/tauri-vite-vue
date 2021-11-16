@@ -1,19 +1,15 @@
 {
   "package": {
-    "productName": "unicorn",
+    "productName": "project",
     "version": "0.1.0"
   },
   "build": {
-    "distDir": "Injected by vite-plugin-tauri",
-    "devPath": "Injected by vite-plugin-tauri",
+    "distDir": "../dist",
+    "devPath": "http://localhost:3000",
     "beforeDevCommand": "",
     "beforeBuildCommand": ""
   },
   "tauri": {
-    "systemTray": {
-      "iconPath": "icons/icon.png",
-      "iconAsTemplate": true
-    },
     "bundle": {
       "active": true,
       "targets": "all",
@@ -40,7 +36,7 @@
         "minimumSystemVersion": "",
         "useBootstrapper": false,
         "exceptionDomain": "",
-        "signingIdentity": null, 
+        "signingIdentity": null,
         "entitlements": null
       },
       "windows": {
@@ -57,7 +53,7 @@
     },
     "windows": [
       {
-        "title": "Tauri App",
+        "title": "project",
         "width": 800,
         "height": 600,
         "resizable": true,
